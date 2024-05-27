@@ -1,50 +1,32 @@
 # PyCon US 2024レポート
 
 ```{note}
-* 参考
+## 最終アウトプットのイメージ
+
 * [#01 PyCon US 2023への道、カンファレンス前夜祭から1日目セッションへ | gihyo.jp](https://gihyo.jp/article/2023/05/pycon-us2023-001)
 * [#02 PyCon US 2023 後半のハイライト ―PyScript関連セッションに注目 | gihyo.jp](https://gihyo.jp/article/2023/05/pycon-us2023-002)
+* [日本をはじめ各国のスピーカーが語るPythonのいま ―「PyCon Thailand 2019」レポート | gihyo.jp](https://gihyo.jp/news/report/2019/07/0501)
+
+## 参考リンク
+
+* MySTのmarkdownの書き方: [myst-parser](https://myst-parser.readthedocs.io/en/latest/)
+* 寺田の写真
+  * [全部](https://drive.google.com/drive/folders/1O4Bh9O4y_iNQr5nHxP1jvexLzMu227JN?usp=sharing)
+  * [maaya](https://drive.google.com/drive/folders/1O4Bh9O4y_iNQr5nHxP1jvexLzMu227JN?usp=sharing)
+  * [yoshida](https://drive.google.com/drive/folders/1R2gS2Y04EJ0dqyzsJM_l3T47RF0BDGSG)
+  * [takanory](https://drive.google.com/drive/folders/1oOl6wv8csp11Mo4MQutNzji6lp9uFjAU)
+  * [Junya Fukuda](https://drive.google.com/drive/folders/1k8sLNCZ4Gl92f3bm_n6FeuliyBghcpUi)
+  * [koxudaxi](https://drive.google.com/drive/folders/1Z828q3p2T377vkzIVpnYKVN4y8W7q_j6)
 ```
 
 鈴木たかのり（[@takanory](https:/twitter.com/takanory)）です。
 2024年5月後半にアメリカのピッツバーグで開催された、プログラミング言語Pythonの国際カンファレンス「PyCon US 2024」に参加してきたので、その様子をレポートします。
 
-## PyCon US 2024とは
-
-PyCon USはアメリカで開催されるPythonに関するカンファレンスです。
-毎年アメリカの各都市で開催され、2024年はペンシルバニア州のピッツバーグで開催されました。
-来年もピッツバーグで開催予定です。
-
-PyCon US 2024のイベント概要は以下の通りです。
-
-|項目|内容|
-|--|--|
-|URL|<https://us.pycon.org/2024/>|
-|日程|チュートリアル: 2023年5月15日（水）、16日（木）|
-| | カンファレンス: 2023年5月17日（金）～19日（日）|
-| | スプリント: 2023年5月20日（月）〜23日（木）|
-|場所|ペンシルバニア州、ピッツバーグ|
-|会場|[David L. Lawrence Convention Center](https://www.pittsburghcc.com/)|
-|参加費|個人：400 USD、企業：750 USD、学生：100 USD、オンライン：100 USD|
-|主催|[Python Software Foundation(PSF)](https://www.python.org/psf-landing/)|
-
-```{figure} images/pyconus2024.png
-:width: 600
-
-PyCon US 2024 Webサイト
-```
-
-なお、筆者はPyCon US 2019、2023に続いて三度目のPyCon USの参加です。
-以前の様子については以下のレポートを参照してください。
-
-* [PyCon US 2023 参加レポート](https://gihyo.jp/list/group/PyCon-US-2023-%E5%8F%82%E5%8A%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88#rt:/article/2023/05/pycon-us2023-001)
-* [PyCon US 2019 参加レポート](https://gihyo.jp/list/group/%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E3%81%AEPython%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9-US-PyCon-2019-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88#rt:/news/report/01/us-pycon2019/0001)
-
 ```{toctree}
 :maxdepth: 2
 :glob:
 
-*
+about
+day*
+sprints
 ```
-
-
