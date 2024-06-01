@@ -49,7 +49,7 @@
 ```{admonition} (いい感じのコラムタイトルにしてね)
 このコラムは一般社団法人PyCon JP Association理事の寺田(@terapyon)がお届けします。
 
-PyCon JP Associationは、PyCon APAC（アジア太平洋地域）のコミュニティの一員として活動をしています。
+[PyCon JP Association](https://www.pycon.jp/)は、[PyCon APAC（アジア太平洋地域）](https://pycon.asia/)のコミュニティの一員として活動をしています。
 PyCon APACは2010年から毎年、アジア太平洋地域のいずれかの国で開催しているイベントです。[昨年2023年は東京で開催](https://2023-apac.pycon.jp/)しました。[今年はインドネシアのYogyakarta](https://2024-apac.pycon.id/)で開催されます。
 
 PyCon USにはコミュニティーブースがあり、昨年に引き続きPyCon APAC コミュニティーでもブースを設置しました。
