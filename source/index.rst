@@ -7,6 +7,6 @@ PyCon 2024 Report
 =================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    us/index
