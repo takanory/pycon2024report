@@ -1,6 +1,13 @@
 # Day 3
 
-## Lightlint Talk
+## Lightning Talks
+* PyCon USではコミュニティイベントの告知などのライトニングトーク(LT)があります。
+* 今回も3日目の朝の時間にLTがありましたので、PyCon JP 2024の開催について吉田が話しました。
+![LT登壇風景](images/yoshidapyconus2024lt01.jpg)
+* 一イベント一枚で各イベントの主催者達が一列に並んで、一気に世界中のPyConやPythonにまつわるイベントが紹介されていました。
+
+* このLTの他にも世界の多くのPyConイベントが [Python Events Calendar](https://wiki.python.org/moin/PythonEventsCalendar) で紹介されています。
+* もちろんPyCon JP 2024も登録済みで、紹介されています。あなたがPythonイベントに参加、また開催するときに是非活用しましょう!
 
 ## Keynote: Kate Chapman
 
