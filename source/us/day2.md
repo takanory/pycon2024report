@@ -24,7 +24,7 @@
 * 以前は考えられないようにプロジェクトを素早く作成できるのを助けてくれる
 * PSFの投票ページをDatasetteのプロジェクトでデータセットにする?
 
-```{admonition} 挑戦と反省：PyCon US 2024登壇で得たもの
+```{admonition} 挑戦と反省：はじめてのPyCon US 2024登壇で得たもの
 
 こんにちは、福田 隼也（@JunyaFff）です。ここでは、初めて参加の「PyCon US」で登壇してきた話をコラムで紹介します。
 わたしカンファレンス2日目、朝10:30からRoom 301-305という部屋で「Event-Driven asyncio: A Case Study of Trio's API」というタイトルのトークをしました。
@@ -62,7 +62,9 @@ Pythonの非同期といえば標準ライブラリである `asyncio` が有名
 * [trio_util.AsyncValue - Document](https://trio-util.readthedocs.io/en/latest/)
 * [asyncio-util - GitHub](https://github.com/jrfk/asyncio-util)
 
-実は去年Euro Python 2023でトークをした時に、Pythonで非同期を利用されている方が多く驚いたのですが、「何に利用しているか」というのを聞くことができませんでした。その反省をふまえ、今回は「何に使っているか」というのを挙手で聞いてみました。すると、参加者の方々が挙手をしてくれました。Web、バッチ処理、ツール、などさまざまな用途で利用されていることがわかりました（ちなみにTrioのユーザーは確認できませんでした。）
+実は去年Euro Python 2023でトークをした時[^euro]に、Pythonで非同期を利用されている方が多く驚いたのですが、「何に利用しているか」というのを聞くことができませんでした。その反省をふまえ、今回は「何に使っているか」というのを挙手で聞いてみました。すると、参加者の方々が挙手をしてくれました。Web、バッチ処理、ツール、などさまざまな用途で利用されていることがわかりました（ちなみにTrioのユーザーは確認できませんでした。）
+
+[^euro] Euro Python 2023参加の記事を書かせていただきました。 [日本からひとりで参加した「EuroPython 2023」スピーカー体験レポート | gihyo.jp](https://gihyo.jp/article/2023/12/road2euro-python)
 
 ```{figure} source/us/images/fukuda_talk.png
 :width: 600
@@ -81,10 +83,6 @@ Pythonの非同期といえば標準ライブラリである `asyncio` が有名
 
 トーク終了後の様子
 ```
-
-
-
-
 
 
 
