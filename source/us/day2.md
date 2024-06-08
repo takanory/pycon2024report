@@ -31,7 +31,7 @@
 
 * [トーク概要 - PyCon US 2024](https://us.pycon.org/2024/schedule/presentation/142/)
 
-```{figure} source/us/images/fukuda_talk_list.png
+```{figure} images/fukuda_talk_list.png
 :width: 600
 :alt: Room 301-305でのトーク一覧
 
@@ -44,7 +44,7 @@ Room 301-305でのトーク一覧。中段に「Event-Driven asyncio: A Case Stu
 
 司会の方と「人が少ないね」と話をしていると時間になり、司会の方が壇上でトークの紹介をしてくれました。すると途中から会場に参加者が増えてきました。あとから聞いた話では、キーノートが予定の時間よりも終わる時間が少し遅かったようで、そこからの移動だったようです。一安心してトークを進めることができました。
 
-```{figure} source/us/images/fukuda_started_talk.png
+```{figure} images/fukuda_started_talk.png
 :width: 600
 :alt: 開始直後の様子
 
@@ -66,7 +66,7 @@ Pythonの非同期といえば標準ライブラリである `asyncio` が有名
 
 [^euro] Euro Python 2023参加の記事を書かせていただきました。 [日本からひとりで参加した「EuroPython 2023」スピーカー体験レポート | gihyo.jp](https://gihyo.jp/article/2023/12/road2euro-python)
 
-```{figure} source/us/images/fukuda_talk.png
+```{figure} images/fukuda_talk.png
 :width: 600
 :alt: トーク中の様子
 
@@ -77,7 +77,7 @@ Pythonの非同期といえば標準ライブラリである `asyncio` が有名
 
 はじめてのアメリカ、はじめてのPyCon USでの学びをたくさん持ち帰ることができ、多くの出会いがありました。また、機会を作ってカンファレンスに参加したいと思います。ありがとうございました。
 
-```{figure} source/us/images/fukuda_after_the_talk.png
+```{figure} images/fukuda_after_the_talk.png
 :width: 600
 :alt: トーク終了後の様子
 
