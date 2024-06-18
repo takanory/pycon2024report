@@ -11,7 +11,7 @@
 
 * MySTのmarkdownの書き方: [myst-parser](https://myst-parser.readthedocs.io/en/latest/)
 * 寺田の写真
-  * [全部](https://drive.google.com/drive/folders/1O4Bh9O4y_iNQr5nHxP1jvexLzMu227JN?usp=sharing)
+  * [全部](https://www.dropbox.com/scl/fo/u0c95exvcufntp53y1qey/AAB8u7BB1Gi4K40yTc71e04?amp=&rlkey=866iteisxsxc66xx8n3hzz88q&e=2&st=o46bxy5n)
   * [maaya](https://drive.google.com/drive/folders/1O4Bh9O4y_iNQr5nHxP1jvexLzMu227JN?usp=sharing)
   * [yoshida](https://drive.google.com/drive/folders/1R2gS2Y04EJ0dqyzsJM_l3T47RF0BDGSG)
   * [takanory](https://drive.google.com/drive/folders/1oOl6wv8csp11Mo4MQutNzji6lp9uFjAU)

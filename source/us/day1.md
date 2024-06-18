@@ -2,6 +2,11 @@
 
 ## Welcome
 
+* video: <https://events.hubilo.com/pycon-us-2024/session/234271>
+* https://stream.mux.com/InaO95Gqswk52RKZOd53BcXpla9cq5XQNuV006teK9Tk/high.mp4
+* PSF Welcome video: <https://events.hubilo.com/pycon-us-2024/session/234272>
+* https://stream.mux.com/9a0101sF8HlsCYHLvIbAGnQb024TvXxU5DQ26no007vT4jw/high.mp4
+
 * ChairのMariattaさんのオープニング
 * 100+ボランティアのオーガナイザー
 * Celebration
@@ -17,6 +22,9 @@
 * Fastly: 4.3EBを配信
 
 ## Keynote: Jay Miller
+
+* video: <https://events.hubilo.com/pycon-us-2024/session/234273>
+* https://stream.mux.com/SyApTSMqX00ldiXsAhrzWZgriwSQlQbArwm015pmeH5dE/high.mp4
 
 * PyCon USだと何人かの黒人しかステージで見たことがない
 * どこかで発表した?→仕事を探している(そうかー
@@ -38,6 +46,8 @@
 
 ## Making Your Documentation Interactive with PyScript
 
+* <https://events.hubilo.com/pycon-us-2024/session/234181>
+* https://stream.mux.com/9t6QfvsHKEtCc9vXfUK01gV1p14OEpC02ejLin5008d2Xc/high.mp4
 * <https://us.pycon.org/2024/schedule/presentation/92/>
 * py-editorはそれぞれ別のインタプリター
 * environmentで共有できる
@@ -54,6 +64,8 @@ APAC Boothのはなし
 
 ## Ruff: An Extremely Fast Python Linter and Code Formatter, Written in Rust
 
+* <https://events.hubilo.com/pycon-us-2024/session/234193>
+* https://stream.mux.com/pKn4OXC9KG76tLx7puZCCXSUgdDqpsapE5lXfSPgtA8/high.mp4
 * Ruffはlintとformatとcode transformer
 * what makes ruff fast?
 * tokenに分割、意味的な解釈

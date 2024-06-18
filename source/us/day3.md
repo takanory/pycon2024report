@@ -18,7 +18,9 @@
   * スポンサー: AWS
 * 昨年PSFに参加した
 * PyPIのセキュリティ対応したブログを書いた
-* discordでセキュリティ問題があった?
+* discordでセキュリティ問題があった?     Meet our Security Engineers
+
+
 * next
   * CPythonの方でも見ていく?
   
