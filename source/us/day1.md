@@ -87,18 +87,39 @@ Jay Miller氏
 
 ## Making Your Documentation Interactive with PyScript
 
-* <https://events.hubilo.com/pycon-us-2024/session/234181>
-* https://stream.mux.com/9t6QfvsHKEtCc9vXfUK01gV1p14OEpC02ejLin5008d2Xc/high.mp4
-* <https://us.pycon.org/2024/schedule/presentation/92/>
-* py-editorはそれぞれ別のインタプリター
-* environmentで共有できる
-* URLをvirtual filesystemとして使える
-* sphinx-pyscript のdirectiveで動かせる
-  * +richでリッチになる
-  * mkdocs-pyscript も同じ感じ
+* [Making Your Documentation Interactive with PyScript](https://us.pycon.org/2024/schedule/presentation/92/)
+* スピーカー: Jeff Glass
+* スライドとデモ: [Making Your Documentation Interactive with PyScript](https://jeff.glass/post/pycon-talk-2024/)
+
+このトークでは、Sphinxなどで書いたHTMLのドキュメントに[PyScript](https://pyscript.net/)を導入し、インタラクティブなドキュメントにする方法について紹介していました。
+PyScriptの基本的な動作原理と導入方法について解説し、次にpy-editorを紹介しました。
+py-editorを導入するとHTMLの中でPythonコードを書いて実行することができるようになります。
+
+* [Python editor - PyScript](https://docs.pyscript.net/latest/user-guide/editor/)
+
+```{figure} images/pyscript.jpg
+:width: 400px
+
+PyScriptを導入
+```
+
+またpy-editorはそれぞれ独立したインタープリターが動作します（メモリ空間が別）が、environmentを使用すると共有できるようになります。
+またconfigurationで設定すると任意のURLをファイルシステムのように使用できます。CSVファイルを読み込む例が紹介されていました。
+
+Python製の静的サイトジェネレーターである[Sphinx](https://www.sphinx-doc.org/en/master/)、[MkDocs](https://www.mkdocs.org/)にそれぞれPyScriptを導入する拡張機能も紹介していました。
+
+* [Sphinx PyScript documentation](https://sphinx-pyscript.readthedocs.io/en/latest/)
+* [JeffersGlass/mkdocs-pyscript: Use PyScript in mkdocs](https://github.com/jeffersglass/mkdocs-pyscript)
+
+私はSphinxでドキュメントを書いて公開することはよくあり、[Python Boot Camp Text](https://pycamp.pycon.jp/)にうまくPyScriptを入れられないかなと思いました。
+今度ぜひ挑戦してみたいと思います。
+
+PyScriptについてはPython Monthly Topicsの以下の記事も参考にしてください。
+
+* [WebブラウザでPythonが動作する！PyScriptの詳解](https://gihyo.jp/article/2023/04/monthly-python-2304)
   
-```{admonition} (いい感じのコラムタイトルにしてね)
-このコラムは一般社団法人PyCon JP Association理事の寺田(@terapyon)がお届けします。
+````{admonition} PyCon APACコミュニティブース
+このコラムは一般社団法人PyCon JP Association理事の寺田([@terapyon](https://twitter.com/terapyon))がお届けします。
 
 [PyCon JP Association](https://www.pycon.jp/)は、[PyCon APAC（アジア太平洋地域）](https://pycon.asia/)のコミュニティの一員として活動をしています。
 PyCon APACは2010年から毎年、アジア太平洋地域のいずれかの国で開催しているイベントです。[昨年2023年は東京で開催](https://2023-apac.pycon.jp/)しました。[今年はインドネシアのYogyakarta](https://2024-apac.pycon.id/)で開催されます。
@@ -110,34 +131,55 @@ PyCon USにはコミュニティーブースがあり、昨年に引き続きPyC
 各国でPyConの主催を中心的に行っているメンバーたちが集まり、日本はもちろん、韓国、台湾、インドネシア、インドの方々で時間のある時にはブースに居て説明員をするという形で行いました。
 今年は、ブース用にTシャツを作りAPACチームとしての一体感を出すように運営しました。
 
-![PyCon APAC Tシャツで記念撮影](images/booth-t-shirt.jpg)
+```{figure} images/booth-t-shirt.jpg
+:width: 400px
+
+PyCon APAC Tシャツで記念撮影
+```
 
 ブースにはノベルティとして、各国からのお菓子が置かれブースに立ち寄ってくれた方に配布しました。日本からは抹茶のキットカットを持っていたのですが大変好評でした。他にもPyCon APAC 2024のステッカーを配布したり、PyCon APAC地域のイベントスケージュールが書かれた「折り紙」を配布しました。この折り紙を2枚使うと手裏剣ができあがり、PyCon JPとPyCon APACのWebサイトURLのQRコードがでるようにしたものも配布しました。折り紙は情報としてのチラシの役割と共に手裏剣になるというギミックに興味を持ってもらえました。
 
 ブースには多くの方に立ち寄っていただき、APAC地域にこんなにPyConがあるのかという感想を多く聞けて良かったです。
 
-![PyCon APAC ブース](images/booth-1.jpg)
+```{figure} images/booth-1.jpg
+:width: 400px
+
+PyCon APACブース
 ```
+````
 
 ## Ruff: An Extremely Fast Python Linter and Code Formatter, Written in Rust
 
-* <https://events.hubilo.com/pycon-us-2024/session/234193>
-* https://stream.mux.com/pKn4OXC9KG76tLx7puZCCXSUgdDqpsapE5lXfSPgtA8/high.mp4
-* Ruffはlintとformatとcode transformer
-* what makes ruff fast?
-* tokenに分割、意味的な解釈
-* Concurrency and parallelism
-  * 全部のファイルを並行で処理できる
-* Culture
-  * データで判断
-* 整数の扱いについて
-  * Pythonはデカい整数が扱えるので
-* noquaコメントの処理
-  * 正規表現からLexarに変えて速くなった
-* parser generatorから移行
-  * parser用の専用コードからparser generatorでrustのコードを生成する
-  * Pythonの変更に対応しやすくなった
-  * パフォーマンスも良くなった
+* [Ruff: An Extremely Fast Python Linter and Code Formatter, Written in Rust](https://us.pycon.org/2024/schedule/presentation/22/)
+* スピーカー: Charlie Marsh
+
+このトークではPythonのリンター、フォーマッター、コード変換ツールである[Ruff](https://docs.astral.sh/ruff/)の中身について、作者自ら語るというものでした。
+どのようにしてRuffを速くしているのか、ただRustを使っているだけではないさまざまな工夫があることが解説されました。
+
+速くするためにすべてのファイルを並行で処理
+
+全部のファイルを並行処理と並列処理で処理しているという説明がありました。
+また、データでかならず判断するということで、実装した結果でパフォーマンスが上がったどうかを細かく計測していることが紹介されました。
+
+改善の例として整数の解析処理について説明がありました。
+Pythonでは整数の長さに制限がありませんが、Rustの整数は固定長です。
+当初は整数の文字列を見つけたら `Vec<u32>` とベクター形式にして大きい整数に対応していましたが、常にこの形式で領域を確保するのは無駄です（ほとんどの整数は小さいため）。
+そこで、整数の長さを見て通常は `u64` を使用して、大きな整数のときのみ `Vec<u32>` を使うように変更し、パフォーマンスを改善したとのことです。
+
+```{figure} images/ruff.jpg
+:width: 400px
+
+整数の解析処理
+```
+
+他にも、`#noqa` のコメントを判別する方法を、正規表現から専用のLexarに変更してパフォーマンスが改善されたとのことです。
+Pythonのパーサー（構文解析器）を専用コードからパーサーの生成ツールでRustのコードを生成するようにして、Pythonの変更にも対応しやすくなり、パフォーマンスも改善したとのことです。
+
+Ruffは速いと思っていましたが、ただRustで書いただけじゃなく、地道に改善して今の爆速なツールになっているんだなと、非常に関心しました。
+  
+RuffについてはPython Monthly Topicsの以下の記事も参考にしてください。
+
+* [新しい静的コード解析ツール「Ruff」をご紹介](https://gihyo.jp/article/2023/03/monthly-python-2303)
 
 ````{admonition} 初めて登壇の体験
 このコラムは青野 高大([@koxudaxi](https://github.com/koxudaxi))がお届けします。
@@ -164,7 +206,7 @@ GitHubでスターをもらうのも嬉しいですが、トークに対する�
 私のトークを支えてくれた運営メンバーや友人、そして多くの来場者の方々に心から感謝いたします。
 
 ```{figure} images/koudai_aono_talk.jpg
-:width: 600
+:width: 400px
 
 登壇中の様子
 ```
