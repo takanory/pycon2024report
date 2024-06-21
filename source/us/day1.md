@@ -98,9 +98,25 @@ Jay Miller氏
   * mkdocs-pyscript も同じ感じ
   
 ```{admonition} (いい感じのコラムタイトルにしてね)
-(terada担当)
+このコラムは一般社団法人PyCon JP Association理事の寺田(@terapyon)がお届けします。
 
-APAC Boothのはなし
+[PyCon JP Association](https://www.pycon.jp/)は、[PyCon APAC（アジア太平洋地域）](https://pycon.asia/)のコミュニティの一員として活動をしています。
+PyCon APACは2010年から毎年、アジア太平洋地域のいずれかの国で開催しているイベントです。[昨年2023年は東京で開催](https://2023-apac.pycon.jp/)しました。[今年はインドネシアのYogyakarta](https://2024-apac.pycon.id/)で開催されます。
+
+PyCon USにはコミュニティーブースがあり、昨年に引き続きPyCon APAC コミュニティーでもブースを設置しました。
+
+私達のブースでは、APAC地域でPyConが多く開催されていることを紹介し、今年のPyCon APAC 2024が10月末にインドネシアで開かれていること、さらに興味を持ってくれた地域があれば、それぞれのPyConの特徴などを紹介しました。
+
+各国でPyConの主催を中心的に行っているメンバーたちが集まり、日本はもちろん、韓国、台湾、インドネシア、インドの方々で時間のある時にはブースに居て説明員をするという形で行いました。
+今年は、ブース用にTシャツを作りAPACチームとしての一体感を出すように運営しました。
+
+![PyCon APAC Tシャツで記念撮影](images/booth-t-shirt.jpg)
+
+ブースにはノベルティとして、各国からのお菓子が置かれブースに立ち寄ってくれた方に配布しました。日本からは抹茶のキットカットを持っていたのですが大変好評でした。他にもPyCon APAC 2024のステッカーを配布したり、PyCon APAC地域のイベントスケージュールが書かれた「折り紙」を配布しました。この折り紙を2枚使うと手裏剣ができあがり、PyCon JPとPyCon APACのWebサイトURLのQRコードがでるようにしたものも配布しました。折り紙は情報としてのチラシの役割と共に手裏剣になるというギミックに興味を持ってもらえました。
+
+ブースには多くの方に立ち寄っていただき、APAC地域にこんなにPyConがあるのかという感想を多く聞けて良かったです。
+
+![PyCon APAC ブース](images/booth-1.jpg)
 ```
 
 ## Ruff: An Extremely Fast Python Linter and Code Formatter, Written in Rust
