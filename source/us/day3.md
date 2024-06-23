@@ -103,8 +103,12 @@
 * PyLadies item 29 -> 44
   * PyLadies Travel Grant
   
-```{admonition} (いい感じのコラムタイトルにしてね)
-(maaya担当)
+```{admonition} Outstanding PyLady Award
+Outstanding PyLady Award は2024年1月にPyLadies Global Councilで新設され、世界中のPyLadiesの中からPythonコミュニティに広く貢献をした人を称えるアワードです。
+2024年1月から2月の間にノミネーションが行われていたことは知っていましたが、まさか自分自身が受賞するとは思ってもいませんでした。
+PyCon USではPyLadies Auction/PyLadies Luncheon/Closing の3回受賞アナウンスをしていただき、Closingでは青い宝石型の名前入りトロフィーもいただきました。みなさま、本当にありがとうございました。
 
-PyLady Awardのはなしとか
+今回の受賞およびPyCon US 2024への参加を通じて、様々な国のPyLadies事情を聴いたり、意見交換したりできたことは大変有意義でしたし、いままでオンライン上でしか会ったことのなかったPyLadiesのみなさんとも直接お話ができたことはとってもうれしかったです。
+
+PyCon US(海外カンファレンス)ってちょっと怖いな、何喋ったらいいかわからないな、一人ぼっちにならないかな、女性いるのかな・・・不安は尽きないと思いますが、もし不安があるのであれば、一度PyLadiesに相談してみてください。日本にも海外にもPyLadiesがあります。私も今年PyLadiesのSlackでいろいろサポートいただいたのでフォローアップ体制はお墨付き。参加してみたい気持ちがあるなら行かないなんて選択肢はもったいない。会場ではPythonの知識共有だけではなく、驚くほどたくさんの人のつながりを体験できます。ぜひ、海外のPyConに訪れてみてください。
 ```
