@@ -30,16 +30,37 @@ Dima氏はPyCon始めたときにどうやってスポンサーや人を探す�
 
 ## Keynote: Simon Willison
 
-2日目のキーノートスピーカーのSimon Willison氏はDjangoの共同作成者ですが、この日はDjangoについてではなくLLM（大規模言語モデル）について話したい！ということでトークが恥じましたました。
+2日目のキーノートスピーカーのSimon Willison氏はDjangoの共同作成者ですが、最近はAIとLLM（大規模言語モデル）に取り込んでおり、トークはこれらについての内容でした。
 
-* LLMについて話したい
-* AIじゃなくてImitation intelligence
-* どのモデルを使うのがいい?→ふんいき
-* MLCChatがおすすめ
-* llm.datasette.io
-* <https://pypi.org/project/vosk/>
-* 以前は考えられないようにプロジェクトを素早く作成できるのを助けてくれる
-* PSFの投票ページをDatasetteのプロジェクトでデータセットにする?
+```{figure} images/simon.jpg
+:width: 400px
+
+Simon氏
+```
+
+まずAI（人工知能）はArtificial Intelligenceの略ですが、ChatGPT、Google Gemini、ClaudeやLlamaは「AIではなくImitation Intelligence（模倣知能）だ」と語られました。
+知能を模倣すれば有用なことができるということです。
+このようなサービスができることは文中の次の単語を予測するだけで、統計的にオートコンプリートしているだけです。
+ただ、より良いオートコンプリートになると便利になるということです。
+筆者もこの考え方には非常に同意しました。
+
+どのモデルを使うのがよいか？という質問に対しては「Vibes（雰囲気で）」と語っていました。
+参考になるサイトとして[LMSYS Chatbot Arena Leaderboard](https://chat.lmsys.org/?leaderboard)が紹介されました。
+このサイトではLLMをランク付けしています（2024年6月21日版ではGPT-4oが1位、次いでGeminiが2位でした）。
+
+多くのモデルはオープンなライセンスモデルですが、オープンソースではありません。
+iPhoneを使っている人には[MLC Chat](https://apps.apple.com/jp/app/mlc-chat/id6448482937)というアプリをインストールすると、オープンソースライセンスのMistralというモデルが使えるためおすすめだそうです。
+ここでは例としてPythonでCSVを開析する方法を質問し、ほぼ正しいコードが回答されていました。
+
+現在メインのプロジェクトである[datasette.io](https://datasette.io/)についても紹介していました。
+このサイトはデータを探索して公開するためのツールで、さまざまな形式のデータを分析、探索して、対話的ななWebサイトやAPIとして公開することができるそうです。
+このサイトにLLMを活用した機能の追加をしているそうです（[llm.datasette.io](https://llm.datasette.io/)）。
+非構造化された大量のテキストから、LLMを使って活用できる構造化されたデータに変換するというものです。
+例としてPSFの議事録ページから構造化したデータを取得していました。
+このツールとWebサイトは普通に便利そうだなと思いました。
+
+他にもAIとLLMに対して、ここでは書き切れないほどさまざまな知見が紹介されていました。
+興味のある方はぜひビデオを確認してみてください。
 
 ````{admonition} 挑戦と反省：はじめてのPyCon US 2024登壇で得たもの
 
@@ -55,7 +76,7 @@ Dima氏はPyCon始めたときにどうやってスポンサーや人を探す�
 Pythonの非同期といえば標準ライブラリである `asyncio` が有名ですが、 今回のトークではよりシンプルで使いやすい `Trio` にフォーカスしました。なぜ `Trio` が使いやすいのか、なぜプロダクションでの採用したのか、また `Trio` を拡張した `trio-util` の `AsyncValue` というAPIにフォーカスを当てて紹介しました。
 今回のトークに合わせ公開した、 `AsyncValue` のasyncio版であるライブラリ `asyncio-util` についても触れました。
 
-ご興味がある方は以下のリンクをみてみてください。
+ご興味がある方は以下のリンクをみてみてください（まだ公開されていませんが）。
 
 * [登壇資料 - Speaker Deck](https://speakerdeck.com/jrfk/event-driven-asyncio-a-case-study-of-trios-api-pycon-us-2024)
 * [trio_util.AsyncValue - Document](https://trio-util.readthedocs.io/en/latest/)
