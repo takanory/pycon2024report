@@ -4,7 +4,7 @@
 ホテルからカンファレンス会場への道は、過去に参加したクリーブランド、ソルトレイクシティよりちょっとだけ怖いなって感じがありました（特になにも事件はありませんでしたが）。
 とはいえ、夜でも複数人なら全然問題なく歩ける感じです。
 
-## Welcome と PSF Welcome
+## WelcomeとPSFからの報告
 
 ```{admonition} 削除予定
 * video: <https://events.hubilo.com/pycon-us-2024/session/234271>
@@ -14,7 +14,9 @@
 ```
 
 カンファレンスのオープニングは2023に続いてConference ChairであるMariatta（[@mariatta](https://twitter.com/mariatta)）氏からのあいさつです。
-オープニングの最初の方で私もインタビューに参加した「PyCon USコミュニティメンバーからのメッセージ動画」が流れたんですが、ダイジェスト版のようで私は出ませんでした。残念（フルバーションはこちら→[Get ready for PyCon US 2024! Tips and tricks from our community.](https://www.youtube.com/watch?v=RL3HFj5SDqI&t=451s)）。
+オープニングの最初の方で「PyCon USコミュニティメンバーからのメッセージ動画」が流れました。
+私もこのインタビュー動画に出演しており、自分が出るのを待っていたんですが、ダイジェスト版のようで私は出ませんでした。残念。
+フルバージョンはこちらです（[Get ready for PyCon US 2024! Tips and tricks from our community.](https://www.youtube.com/watch?v=RL3HFj5SDqI&t=451s)）。
 
 ```{figure} images/opening.jpg
 :width: 400px
