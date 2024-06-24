@@ -106,15 +106,30 @@ Pythonの非同期といえば標準ライブラリである `asyncio` が有名
 
 ````
 
-## CPython's Compilation Pipeline
+## 食事がおいしいPyCon US
 
-* <https://us.pycon.org/2024/schedule/presentation/3/>
-* Python 3.11から3.13でCPythonのパイプラインが変わった
-* ユニットテスト、メンテナンスしやすくする
-* 1: トーカナイザーでトークンに分割
-* 2: トークンからASTを作る
-* 3: optimizer。byte codeを最適化する
-* 新しいPython API
+筆者は過去PyCon US 2019（クリーブランド）とPyCon US 2023（ソルトレイクシティ）に参加しました。
+その様子は以下の記事でも参照できます。
+
+* [世界最大のPythonカンファレンス「US PyCon 2019」レポート 記事一覧 | gihyo.jp](https://gihyo.jp/list/group/%E4%B8%96%E7%95%8C%E6%9C%80%E5%A4%A7%E3%81%AEPython%E3%82%AB%E3%83%B3%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9-US-PyCon-2019-%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88#rt:/news/report/01/us-pycon2019/0004)
+* [PyCon US 2023 参加レポート 記事一覧 | gihyo.jp](https://gihyo.jp/list/group/PyCon-US-2023-%E5%8F%82%E5%8A%A0%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88#rt:/article/2023/05/pycon-us2023-001)
+
+その過去2回と比べると、今回はダントツでカンファレンスで提供される食事がおいしい！！といううれしいことがありました。
+カンファレンス会場によるものなのか、イベント主催者側の意向かは不明ですが、朝食も昼食もとても豪華でおいしいため、食事の時間も非常に楽しみだったことが印象的です。
+筆者はホテルで朝食を食べていましたが、この内容なら朝食無しのホテルでも全然問題ないなと思いました。
+来年もおなじくらいおいしい食事だといいなぁ。
+
+```{figure} images/breakfast.jpg
+:width: 400
+
+フルーツがたくさんの豪華な朝食
+```
+
+```{figure} images/lunch.jpg
+:width: 200
+
+ビュッフェスタイルのおいしいランチ
+```
 
 ````{admonition} PyCon での PSFメンバーランチについて
 
@@ -159,13 +174,76 @@ PSFメンバーを通じて、ボードメンバーの投票などPSFの活動�
 
 ````
 
+## CPython's Compilation Pipeline
+
+* [CPython's Compilation Pipeline](https://us.pycon.org/2024/schedule/presentation/3/)
+* スピーカー：Irit Katriel氏
+
+本トークではCPythonのコア開発者であるIrit Katriel氏から、Pythonのコードを開析して実行するパイプラインを、Python 3.11でどのように変更するかという内容です。
+Pythonのコード実行には2つのステージがあります。Pythonコードから[バイトコード(https://docs.python.org/ja/3/glossary.html#term-bytecode)というCPythonの内部表現への **コンパイル** 処理のステージと、バイトコードを実行して結果を得るステージです。
+このトークで扱うのは前半のステージを改良した話です。
+
+```{figure} images/pipeline.jpg
+:width: 400
+
+Irit Katriel氏と新しいパイプライン
+```
+
+現在のコンパイルのステージは以下の様な流れ（パイプライン）です。
+
+1. トーカナイザーがPythonのコードをトークンに変換
+2. パーサーがトークンを[AST（抽象構文木）](https://docs.python.org/ja/3/library/ast.html)に変換
+3. コンパイラーがASTをバイトコードに変換
+
+Python 3.13で導入される新しいコンパイルのステージは、AST以降が以下の様なパイプラインに変わるとのことです。
+
+1. AST optimizerでASTを「最適化されたAST」に変換
+2. コード生成で最適化されたASTを疑似命令に変換
+3. peephole otimizerで疑似命令を「最適化された疑似命令」に変換
+4. アセンブラーで最適化された疑似命令をバイトコードに変換
+
+このようにしたモチベーションとしては、「ユニットテスト、特にpeephole otimizerのテストがしやすくなること」をあげていました。
+他の理由としては「コードの構造の改善」と「柔軟性」があげられていました。
+
+トークの後半ではASTや疑似命令のコードに対して、どういった最適化が行われるかを例をで示していました。
+ASTの最適化の例では、サブノードに「1 + 2」が存在したらそこは「3」に置き換えるというものでした。
+疑似命令の最適化では、if文とfor文の組み合わせでJUMPが2回存在するところを1回にまとめるという例を挙げていました。
+
+これらの処理は新しいPython APIとして `_testinternalcapi` モジュールに含まれています。
+これは、標準ライブラリに含めるにはPEP（Pythonの拡張提案）を書く必要があるため、現在は仮のモジュール名となっているそうです。
+また、この新しいパイプラインの動作を可視化して確認するツールもIrit氏は作成しています。
+興味がある方は以下のリポジトリを参照してみてください。
+
+* [iritkatriel/codoscope](https://github.com/iritkatriel/codoscope)
+
+めちゃくちゃ難しい内容でした。
+ただCPythonの内部がどんどん書き換えられていて散るんだなと感じました。
 
 ## Lightning Talks
 
-* CheukさんとAbigailさんがMC
-* Pure Pythonをクラッシュさせる方法
-* SoftSkill: レビューのコメントをChatGTPで優しくする
-* NumPy 2.0.0の固定長文字列の話し
+2日目のライトニングトークです。
+ライトニングトークではPure Pythonを標準ライブラリを使ってクラッシュさせる話、ソフトスキルとしてレビュー時のコメントをChatGPTを使って優しくする方法、[NumPy 2.0](https://numpy.org/doc/stable//release/2.0.0-notes.html)で追加された可変長文字列の紹介などがされました。
+
+アジアからの参加者では、朝のパネルにも出ていたDima氏が発表していました。
+Dima氏は政府で働いており、オフィス製品を使うつまらない仕事がたくさんあるそうです。
+そこで、[PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/)でマウスとキーボード操作を自動化したり、PDFを[Reportlab](https://www.reportlab.com/)で自動的に処理したり時間を作り、たくさん眠ったそうです。
+仕事が終わっていると上司にバレると新しい仕事が来るので気をつけてくださいとのこと。
+
+もう一人は韓国のJoeun Park氏で、Joeun氏は自身のストーリーを共有しました。
+現在の2児の母でもあるJoeun氏は行く受給かを取得した後に以前の仕事に戻ることができず、新しい仕事を探す必要ができました。
+子育て中にPythonのチュートリアルビデオを作り始め、少しの空き時間でもビデオを作成して公開を続けたそうです。
+古いMacbookとQuickTimeを使い、編集をほぼしていないそのチュートリアル動画の公開を続け、現在そのチャンネルには25,000人のチャンネル登録者がいるとのことです（すごい！）。
+このチャンネルがきっかけで、Pythonでのテキスト分析の書籍を出版したり、さまざまな大学、企業などで講義をするようになっていったそうです。
+
+```{figure} images/park.jpg
+:width: 400
+
+Joeun Park氏
+```
+
+Joeun氏のYouTubeチャンネルは以下です。339本の動画、2.5万人の登録者、一番人気のpandasに関する動画は5.1万回も再生されています。ただただすごいなと感じました。
+
+* [오늘코드todaycode - YouTube](https://www.youtube.com/@todaycode/videos)
 
 ## PyLadies Auction
 
