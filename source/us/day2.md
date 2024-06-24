@@ -296,7 +296,7 @@ Guido van Rossum氏とそのパネル
 
 会場の外に出てみると橋がPython色にライトアップされていました。
 
-```{figure} images/bridge.jp
+```{figure} images/bridge.jpg
 :width: 400
 
 ライトアップされた橋
