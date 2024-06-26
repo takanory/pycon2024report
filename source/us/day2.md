@@ -136,7 +136,7 @@ Pythonの非同期といえば標準ライブラリである `asyncio` が有名
 一般社団法人PyCon JP Association理事の吉田（[@koedoyoshida](https://twitter.com/koedoyoshida/)）です。
 このコラムではPSFメンバーランチについて紹介します。
 
-PSFメンバーランチとは、PyCon US中のどこか一日カンファレンスランチの時間帯で、主催するPython Software Foundation（PSF）のさまざまな地域のメンバーが集まってランチするサブイベントです。
+PSFメンバーランチとは、PyCon US中のどこか一日カンファレンスランチの時間帯で、Python Software Foundation（PSF）のさまざまな地域のメンバーが集まってランチするサブイベントです。
 
 例年ここではランチを取りながら、PSFのスタッフとボードメンバーから昨年の活動や会計に関する報告がされ、他のPSFメンバーと交流します。今年もPythonの生みの親のGuido van Rossum氏が参加していました。
 今年は主にPSFのExecutive DirectorであるDeb Nicholson氏から説明がありました。
@@ -166,9 +166,10 @@ PyCon JPと関わりの深いイクバルさんなど多くの方が意見や質
 メンバーランチでの質疑応答
 ```
 
-PSFメンバーになる方法はいくつかありますが、投票権を持つメンバーになる一つの方法は、月に5時間程度PythonやPyConについて継続して活動していることを認められれば、マネージングメンバーになることができます。
+PSFのメンバーにはいくつかの種類があります。私は投票権のあるマネージングメンバー(Managing Members)として登録しています。
+マネージングメンバーになるには、月に5時間程度PythonやPyConについて継続して活動している必要があります。
 PSFメンバーを通じて、ボードメンバーの投票などPSFの活動に関わることが出来ます。
-興味のある方は下記のページから詳細を確認してみてはいかがでしょうか？
+条件を満たしている方、また興味のある方は下記のページから詳細を確認してみてはいかがでしょうか？
 
 * [Become a Member of the PSF](https://www.python.org/psf/membership/)
 
