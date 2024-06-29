@@ -53,7 +53,7 @@ Opening Receptionは企業やコミュニティブースがあるメインホー
 Newcomer Orientationはキーノートと同じ会場
 ```
 
-```{figure} images/opening.jpg
+```{figure} images/booth.jpg
 :width: 400px
 
 Opening Receptionの企業ブースの様子
