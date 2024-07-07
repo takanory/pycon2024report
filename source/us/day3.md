@@ -274,7 +274,7 @@ Python 3.13では主要な新機能、新言語仕様、新モジュールはあ
 またPython 3.13では新しい対話モードが導入されました。
 シンタックスハイライト、複数行の編集やペーストに対応しています。
 
-他にJITコンパイラーについても紹介されました。
+他にJITコンパイラについても紹介されました。
 
 最後にCPythonでGILをオプションにする件について説明がありました。
 
@@ -282,7 +282,7 @@ Python 3.13では主要な新機能、新言語仕様、新モジュールはあ
 
 長いゴールとしては、フリースレッドのビルドのみとなるのは5年以上先とのことです。
 後方互換性の維持をすること、またサードパーティのコードをGILがないビルドに対応させる必要があることが語られました。
-「これはPython 4ではない」ということが強調して伝えられました。
+「これはPython 4ではない」ということを強調して伝えていました。
 
 ```{figure} images/notpython4.jpg
 :width: 400
@@ -315,6 +315,9 @@ PyLadiesは女性向けのPythonコミュニティで、現在世界中に250以
 1人目のAbigail Dogbe氏は2017年にPyLadies Ghanaを立ち上げ、彼女とそのコミュニティはリベリア、エチオピア、ザンビアなど8つのPyLadies支部に影響を与えたそうです。他にもDjangoCon USでの基調講演なども行っているそうです。
 2人目のJessica Greene氏はベルリンのPyLadies支部を6年以上運営し、インドのデリーなど他の支部にも影響を与えたそうです。他にもPython Pizza Hamburgの運営もしているそうです。
 最後に3人目のMaaya Ishida氏は[PyLadiesの東京支部に](https://tokyo.pyladies.com/)10年以上係わっており、日本全国のPyLadiesとつながることを目的とした[PyLadies Caravan](https://tokyo.pyladies.com/caravan/index.html)も主催しています。またPyCon Hong Kongで基調講演を行っており、[PyCon JP Associationの理事](https://www.pycon.jp/committee/board.html)でもあります。
+
+PyCon JPやPython界隈で筆者も一緒に活動しており友人でもあるMaayaさんが、初めてのPyLady Awardを受賞する1人となりました。
+ものすごくびっくりしましたし、いままでの継続的な活動が認められたんだと思う、とても喜ばしいことだと感じました。
 
 ```{figure} images/pylady-award.jpg
 :width: 400
