@@ -200,68 +200,183 @@ PyCon JP 2024に2人の名前があったら個人的には胸アツです。
 * [Unlocking the Parallel Universe: Subinterpreters and Free-Threading in Python 3.13](https://us.pycon.org/2024/schedule/presentation/128/)
 * スピーカー：Anthony Shaw
 
+スピーカーのAnthony Shaw氏はCPythonをはじめさまざまなOSSの開発者であり、[CPython Internals](https://realpython.com/products/cpython-internals-book/)の著者でもあります。
+日本のPyConにも参加したことがあり、PyCon APAC 2023ではPython 3.12のサブインタープリターについての発表をしていました。
+
+```{figure} images/anthony.jpg
+:width: 400
+
+Anthony Shaw氏
+```
+
+* [Parallel code with Python 3.12 sub-interpreters](https://2023-apac.pycon.jp/timetable?id=VNQKHW)
+
 * 丸めた紙(pickle)を会場に投げてタスクを実行するイメージを伝える。面白い
 * Python 3.13 でGILをdisableにできる
 * Python 3.13を `./configure --disable-gil --experimental-gil` でbuild
 * hypercornの後ろにFlaskでログイン画面作って、リクエストを素早く処理できるようになった
 
-## Keynote: Sumana Harihareswara
-
-* 動画: [Keynote Speaker - Sumana Harihareswara - YouTube](https://www.youtube.com/watch?v=JE5u5mUT6gQ)
-
-* PyPI(?)のプロジェクトマネージャーとして、サイトを更新していったはなし?
-
 ## Steering Council Panel
 
 * 動画: [Python Steering Council Panel - YouTube](https://www.youtube.com/watch?v=81ZpbKdlvh0)
+* スピーカー：Barry Warsaw、Emily Morehouse、Pablo Galindo Salgado、Thomas Wouters、Gregory P. Smith
 
-* Steering Councilの説明
-* SCはPSFとは独立している
-* Steering Council SecretaryをFundして雇っている
-  * Velda Kiara
-* coredevの移動費とかも持っている
-* CouncilとWorking Groupについて
-  * Documatation Editorial Board
-	* docs.python.org, devguide, translations
-  * C API Work Groupができた
-  * PEP 729 Typing Governance Process
-	* Useful, Useable, Stable
-* What's Expected in Python 3.13
-  * PEP 594 で古いモジュールを削除
-  * Type Annotation
-  * Platform support: iOS, Android, Apple Silicon
-  * new REPL: ペーストが便利になってる?F2でヒストリー
-  * JIT
-* Free threading
-  * PEP 703
+Python Steering Councilは投票によって選ばれた5名による委員会で、Python言語とCPythonインタープリターの品質を安定性の維持や、PEP（Python拡張提案）の決定をPythonのコア開発者やPSFと連携して行っています。
+Steering Council Panelはこの5名の委員が現在や今後のPythonについて共有します。
+
+```{figure} images/council.jpg
+:width: 400
+
+Steering Councilメンバー
+```
+
+Steering Council Panelは毎年投票によって選出されます。
+Guido氏がBDFLを退任したときに、コア開発者が集まって議論しガバナンスモデルを提案しました。
+そして結果として現在のSteering Councilモデルとなりました。
+ガバナンスモデルについては以下のPEPに書いてあります。
+
+* [PEP 13 – Python Language Governance](https://peps.python.org/pep-0013/)
+
+現在のCouncilメンバーは以下の所属となっており、所属もバラバラです。
+同じ会社のメンバーは2名までという制限があるそうです。
+
+* Thomas Wouters - Google
+* Pablo Galindo Salgado - Bloomberg
+* Gregory P Smith - Employer TBD
+* Emily Morehouse - Cuttlesoft
+* Barry Warsaw - NVIDIA
+
+PSFの資金を使用してCPythonの開発のためにさまざまな活動を行っています。
+Developers in ResidenceとSecurity Developer in Residenceは、PSFがフルタイムで雇用する技術者で、現在5名います。
+新たにSteering Councilの秘書を雇ったそうです。たしかにいろいろな作業がありそうなので、秘書がいると助かりそうです。
+また、年次のコアデベロッパースプリントを開催しているそうです。
+年に1回、世界中のコアデベロッパーが集まり、一週間CPythonの開発を行います。
+
+Steering Councilと連携してさまざまなワーキンググループが活動しているそうです。
+Ptyhonドキュメントの編集委員会、C APIのワーキンググループ、型ヒントのガバナンスが紹介されました。
+詳細は以下のPEPを参照してください。
+
+* [PEP 732 – The Python Documentation Editorial Board](https://peps.python.org/pep-0732/)
+* [PEP 731 – C API Working Group Charter](https://peps.python.org/pep-0731/)
+* [PEP 729 – Typing governance process](https://peps.python.org/pep-0729/)
+
+次に2024年10月にリリース予定のPython 3.13について説明がありました。
+Python 3.13では主要な新機能、新言語仕様、新モジュールはありません。
+大きな変更点としては、[PEP 594](https://peps.python.org/pep-0594/)による使われていない標準ライブラリの削除、多くの非推奨の関数とクラスの削除、プライベートC関数の削除があります。
+
+型ヒントでの変更は以下です。
+
+* [PEP 696 – Type Defaults for Type Parameters](https://peps.python.org/pep-0696/)
+* [PEP 702 – Marking deprecations using the type system](https://peps.python.org/pep-0702/)
+* [PEP 705 – TypedDict: Read-only items](https://peps.python.org/pep-0705/)
+* [PEP 742 – Narrowing types with TypeIs](https://peps.python.org/pep-0742/)
+
+またPython 3.13では新しい対話モードが導入されました。
+シンタックスハイライト、複数行の編集やペーストに対応しています。
+
+他にJITコンパイラーについても紹介されました。
+
+最後にCPythonでGILをオプションにする件について説明がありました。
+
+* [PEP 703 – Making the Global Interpreter Lock Optional in CPython](https://peps.python.org/pep-0703/)
+
+長いゴールとしては、フリースレッドのビルドのみとなるのは5年以上先とのことです。
+後方互換性の維持をすること、またサードパーティのコードをGILがないビルドに対応させる必要があることが語られました。
+「これはPython 4ではない」ということが強調して伝えられました。
+
+```{figure} images/notpython4.jpg
+:width: 400
+
+This is not going to be Python 4
+```
+
+フリースレッド機能は3つのフェーズに分けて進めるとのことです。
+フェーズ1ではビルドオプションで可能になり、デフォルトではインストールされません。
+フェーズ2はAPIとABIが安定した時点からとなり、コミュニティでのテストなどのサポートが必要です。
+フェーズ3でフリースレッドでのビルドがデフォルトとなりますが、当初は無効化も可能にします。将来的にはGILありのビルドの削除についても議論するとのことです。
+
+かなり丁寧にフリースレッドについて進めるということが認識できました。
+また、Python 4の予定がないことを強調して伝えていたことが印象的でした。
   
 ## Python Software Foundation Update
 
 * 動画: [Python Software Foundation Update - YouTube](https://www.youtube.com/watch?v=RXQWud5y__A&t=168s)
+* スピーカー：Deb Nicolson、Lynn Root
 
-* Deb Nicolson
-* PyLadies Community Awards
-  * 63,000 USD
-  * 84名のノミネーション
-  * PyLadies GhanaのAbigainlさん
-  * PyLadies BerlinのJessica Greeneさん
-  * PyLadies TokyoのMaaya Ishidaさん
-* Fiscal Sponsores
+クロージングの前にPSF UpdateとしてPSFの活動の話がありますが、最初に「PyLadies COmmunity Awards」についての話がありました。
+壇上にはPyLadiesのChairであるLynn Root氏がいます。
+PyLadiesは女性向けのPythonコミュニティで、現在世界中に250以上の支部があります。
+また、昨夜のPyLadiesオークションでは60,000ドルの寄付を集めました。
+これはいままでの最高記録だそうです。
+
+そして10月に開催された[PyLadiesCon](http://conference.pyladies.com/)のあとにCheuk Ting Ho氏が「Outstanding PyLady Award」について提案し、実施することになったそうです。
+初めてのOutstanding PyLady Awardには84件のノミネートが集まり、その中から3名の受賞者が選ばれLynn Root氏から紹介、表彰されました。
+
+1人目のAbigail Dogbe氏は2017年にPyLadies Ghanaを立ち上げ、彼女とそのコミュニティはリベリア、エチオピア、ザンビアなど8つのPyLadies支部に影響を与えたそうです。他にもDjangoCon USでの基調講演なども行っているそうです。
+2人目のJessica Greene氏はベルリンのPyLadies支部を6年以上運営し、インドのデリーなど他の支部にも影響を与えたそうです。他にもPython Pizza Hamburgの運営もしているそうです。
+最後に3人目のMaaya Ishida氏は[PyLadiesの東京支部に](https://tokyo.pyladies.com/)10年以上係わっており、日本全国のPyLadiesとつながることを目的とした[PyLadies Caravan](https://tokyo.pyladies.com/caravan/index.html)も主催しています。またPyCon Hong Kongで基調講演を行っており、[PyCon JP Associationの理事](https://www.pycon.jp/committee/board.html)でもあります。
+
+```{figure} images/pylady-award.jpg
+:width: 400
+
+左からPyLady Awardを受賞したMaaya氏、Jessica氏、Abigail氏
+```
+
+最後にスポンサーと、今年のPyCon USのChairであるMariatta氏へ感謝を述べて、次のChairであるElaine氏を紹介しました。
+そしてPSFのスタッフが壇上に揃い、参加者から拍手が送られました。
+ちなみに、左から3人目の青いシャツの人が、私に「Hoopy Frood」のリボンをくれたSalt氏です。
+
+```{figure} images/psf-staff.jpg
+:width: 400
+
+PSFスタッフのみなさん
+```
 
 ## Closing
 
 * 動画: [PyCon US 2024 Closing - YouTube](https://www.youtube.com/watch?v=05VZ5-YXBGQ)
 
-* トーク数
-* 予算
-* 参加者数
-* Grants
-  * 金額はだいふ増えた
-* PyLadies item 29 -> 44
-  * PyLadies Travel Grant
+クロージングではChairのMariatta氏から、予算、トーク数、登録者数などを2023年と比較して報告が行われました。
+登録者数は2736名、実際に参加した数は2551名、初参加は1752名だそうです。
+65%が初参加とのことで、初参加の比率が高いなと感じました。
+Travel Grant（旅費支援）は351,436 ドル（約5600万円）と、ものすごい金額です。
+筆者も旅費をTravel Grantを受け取っており、非常に助かっています。
+
+```{figure} images/attendees.jpg
+:width: 400
+
+PyCon US 2024の参加者数
+```
+
+そしてPyCon US 2025と2026のChairであるElaine Wong氏にバトンタッチされ、今後のPyCon USについての紹介が行われました。
+PyCon US 2025はピッツバーグで5月中旬のほぼ同じ時期に開催されます。
+
+```{figure} images/elaine.jpg
+:width: 400
+
+Elaine Wong氏
+```
+
+そしてPyCon US 2026はカリフォルニア州のロングビーチで開催されることが発表されました。
+ロサンゼルスからアクセスしやすいので、これはディズニーランド（の中のスターウォーズ）に行くしかないな、と個人的に思いました。
+
+```{figure} images/longbeach.jpg
+:width: 400
+
+PyCon US 2026の開催場所はロングビーチ！
+```
+
+こうして、PyCon US 2024は閉幕しました。
+
   
 ```{admonition} (いい感じのコラムタイトルにしてね)
 (maaya担当)
 
 PyLady Awardのはなしとか
 ```
+
+## アジアメンバーでビールパーティー
+
+* ビール飲みに行ったことを書く
+* 別テーブルにラテン系が来た
+* 寺田さんがこうだいさんを紹介した
