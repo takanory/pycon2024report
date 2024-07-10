@@ -308,7 +308,7 @@ This is not going to be Python 4
 * 動画: [Python Software Foundation Update - YouTube](https://www.youtube.com/watch?v=RXQWud5y__A&t=168s)
 * スピーカー：Deb Nicolson、Lynn Root
 
-クロージングの前にPSF UpdateとしてPSFの活動の話がありますが、最初に「PyLadies COmmunity Awards」についての話がありました。
+クロージングの前にPSF UpdateとしてPSFの活動の話がありますが、最初に「PyLadies Community Awards」についての話がありました。
 壇上にはPyLadiesのChairであるLynn Root氏がいます。
 PyLadiesは女性向けのPythonコミュニティで、現在世界中に250以上の支部があります。
 また、昨夜のPyLadiesオークションでは60,000ドルの寄付を集めました。
