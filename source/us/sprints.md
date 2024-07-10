@@ -151,6 +151,12 @@ PyCon USでのリアル登壇をいつか...と思っています。
 
 * [PyCon US 2024 - Togetter](https://togetter.com/li/2398268)
 
+```{figure} images/asia-members.jpg
+:width: 400
+
+アジアから参加したメンバーで記念撮影
+```
+
 -----
 
 帰りはシカゴ乗り換えですが、飛行機の都合でシカゴに2泊しました。
