@@ -9,7 +9,7 @@ PyCon US 2024のスプリントは5月20日（月）から23日（木）の4日�
 
 [Development Sprints - PyCon US 2024](https://us.pycon.org/2024/events/dev-sprints/)
 
-会場に行くとどの部屋にどのプロジェクトがあるかを書いてあるので、これを見て参加したいプロジェクトの部屋に行きます。
+会場に行くと、各部屋のプロジェクト名が書いてあるので、これを見て参加したいプロジェクトの部屋に行きます。
 たとえばPython CoreはRoom 320であることがわかります。
 
 ```{figure} images/sprints-board.jpg
@@ -20,9 +20,9 @@ PyCon US 2024のスプリントは5月20日（月）から23日（木）の4日�
 
 ## PyScriptスプリント
 
-筆者は昨年に引きつづきPyScriptスプリントに参加しました。
+筆者は昨年に引き続きPyScriptスプリントに参加しました。
 リーダーも昨年と同じFabio Pliger氏でした。
-あいさつをして、[GitHub Issues](https://github.com/pyscript/pyscript/issues)の中から「good first issue」が付いている中で、でできそうなものを探します。
+あいさつをして、[GitHub Issues](https://github.com/pyscript/pyscript/issues)の中から「good first issue」が付いている中で、できそうなものを探します。
 
 ```{figure} images/pyscript.jpg
 :width: 400
@@ -39,7 +39,7 @@ PyScriptスプリントのテーブル（筆者の左隣がFabio氏）
 
 会場を歩いていると、廊下にあるテーブルにみんながステッカーを広げていました。
 さながらステッカー交換所のようです。
-参加者が津照れている小さいお子さんが喜んでステッカーを集めていました。
+参加者が連れている小さいお子さんが喜んでステッカーを集めていました。
 こういうのは万国共通なんですね。
 
 ```{figure} images/stickers.jpg
@@ -49,7 +49,7 @@ PyScriptスプリントのテーブル（筆者の左隣がFabio氏）
 ```
 
 また横を見ると日本から参加した青野さん（1日目に登壇）が、Gudio氏とPaul Everitt氏と立ち話をしていました。
-「Python会の重鎮と立ち話してる！！」と思って盗撮しておきました。
+「Python会の重鎮と立ち話してる！！」と思ってこっそり撮影しておきました。
 こういうシーンが普通にあるのもPyCon USのすごい所だなと思いました。
 
 ```{figure} images/koudai-with-guido.jpg
@@ -73,7 +73,7 @@ Memberと格闘する寺田さん
 
 ランチはランチボックスが提供されました。
 ランチが提供されるだけありがたいです。
-メインはチキンサラダでポテチとリンゴがまるごと1つ付いてくるのがアメリカっぽいなと思います。
+メインはチキンサラダで、ポテチとリンゴがまるごと1つ付いてくるのがアメリカっぽいなと思います。
 ランチを食べていると隣の人から「LTで日本語の話をしてたよね？面白かったよ」といった声をかけてもらいました。
 「ありがとうございますー」とあいさつを交わして名前を確認してみると、なんとPyCon US 2023のキーノートスピーカーだったNed Batchelder氏でした。
 そこかしこに大物がいて、PyCon USやべーなと思いました。
@@ -132,10 +132,11 @@ Hynek Schlawack氏
 
 PyCon US 2024のレポートは以上です。
 今年もまた非常に充実したイベントでした。アジアからの参加者も増えて、来年はもっと増えるといいなと思っています。
-個人的にはPyCon USで初めてのライトニングトークをできたことが印象深いです。
-フルのトークは過去に採択されたことはあるんですが、コロナでオンライン化、自身がコロナで不参加と、リアル登壇をいつか...と思っています。
+個人的にはPyCon USでの初めてのライトニングトークが印象深いです。
+フルの30分トークは過去に採択されたことはあるんですが、コロナでオンライン化、筆者自身がコロナで急遽不参加と2回ともリアル登壇ができてません。
+PyCon USでのリアル登壇をいつか...と思っています。
 
-筆者が行っているYouTubeライブ、PyCon JP TVでもPyCon US 2024について紹介しています。
+なお、筆者が行っているYouTubeライブ「[PyCon JP TV](https://tv.pycon.jp/)」でもPyCon US 2024について紹介しています。
 寺田さんの写真を中心としたレポートなので、異なった目線からの感想もあるので、ぜひご覧になってください。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2wNirevfyuE?si=WOcFOwv_qR4tGxFX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
