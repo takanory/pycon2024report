@@ -197,11 +197,6 @@ PyCon JP 2024に2人の名前があったら個人的には胸アツです。
 
 ## Unlocking the Parallel Universe: Subinterpreters and Free-Threading in Python 3.13
 
-```{warning}
-ここはまだ執筆できていません。
-間に合いそうならあとで追加します。
-```
-
 * [Unlocking the Parallel Universe: Subinterpreters and Free-Threading in Python 3.13](https://us.pycon.org/2024/schedule/presentation/128/)
 * スピーカー：Anthony Shaw
 
@@ -214,12 +209,43 @@ PyCon JP 2024に2人の名前があったら個人的には胸アツです。
 Anthony Shaw氏
 ```
 
-* [Parallel code with Python 3.12 sub-interpreters](https://2023-apac.pycon.jp/timetable?id=VNQKHW)
+最初のこのトークの前提条件として、いくつかのトークやドキュメントが提示されました。
+JITのトークについてはこの記事で紹介したものです。
 
-* 丸めた紙(pickle)を会場に投げてタスクを実行するイメージを伝える。面白い
-* Python 3.13 でGILをdisableにできる
-* Python 3.13を `./configure --disable-gil --experimental-gil` でbuild
-* hypercornの後ろにFlaskでログイン画面作って、リクエストを素早く処理できるようになった
+* [PyCon US 2023 - Eric Snow talk on sub interpreters](https://www.youtube.com/watch?v=3ywZjnjeAO4)
+* [EuroPython 2022 - Sam Gross talk on free-threading](https://www.youtube.com/watch?v=9OOJcTp8dqE)
+* PyCon US 2024 - "Sync vs Async in Python" happening right now
+* PyCon US 2024 - Building a JIT compiler for CCython
+* PyCon US 2024 - Overcoming GIL with sub interpreters and immutability
+* "Parallelism and Concurrency" chapter from [Python Internals](https://realpython.com/products/cpython-internals-book/)
+* My Masters Thesis [doi.org/10.25949/23974764.v1](https://doi.org/10.25949/23974764.v1)
+
+最初に丸めた紙をPickleされたデータに見立てて、それを会場に投げて処理してもらって並列でタスクを実行する例について説明していました。なかなか面白いアプローチです。
+
+Pythonでの並列実行についてスレッド、コルーチン、マルチプロセッシング、サブインタープリターの4つを提示し、それぞれの特徴メリットデメリットについて紹介しました。
+複数のCPUコアを使用する場合はマルチプロセッシングかサブインタープリターとなります。
+
+CPython 3.11まではプロセス全体にGILが1つだけありましたが、3.12からはインタープリターごとにGILが存在するようになります。
+Python 3.12で4コアCPUで200桁と2000桁のπの計算を例で見てみると、スレッドは200桁だと速い（0.04秒）ですが2000桁だと一番遅く（2.37秒）なります。
+サブインタープリターでは200桁だと0.05秒ですが、2000秒だと0.63秒とかなり速く処理されます。
+マルチプロセッシングでは処理のオーバーヘッドがサブインタープリターより少し遅くなります。
+サブインタープリターは「オーバーヘッドが少なくメモリを共有しているマルチプロセッシング」のようなものと述べられていました。
+
+ここからフリースレッドの話になりますが、Python 3.13からはGIlを無効にできるようになります。
+GITを削除するためには以下の手順で進めるそうです。現在は3番目のステップの最中で、時間がかかります。
+
+1. GILを削除する
+2. メモリ確保とガベージコレクターを変更する
+3. GILが存在するすべてのCのコードを修正する
+
+Python 3.13のベータ版でGILを有効/無効にしたものでπを2000桁まで計算する場合で速度を比較してみると、スレッドは高速（2.41秒→0.75秒）になりましたが、サブインタープリター（0.76秒→0.99秒）とマルチプロセッシング（1.2秒→1.57秒）では少しずつ遅くなります。
+GILをオフにすると、現状は少し遅くなります。
+
+まとめとして、マルチプロセッシングに対してサブインタープリターはよりよい解決策となるということ、フリースレッディングはデータ交換のためのスレッドプールより良い解決策となるということが語られました。
+ただし、Pythonはスレッドを安全に使うためにGILに依存してました。
+そのため、GILを削除すると予測しない方法で壊れてしまう可能性があるとのことです。
+
+GILの削除はすぐにはデフォルトにならないと思いますが、CPythonのコアが徐々に変わっていっているということが理解できました。
 
 ## Steering Council Panel
 
