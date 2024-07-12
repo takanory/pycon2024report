@@ -224,7 +224,8 @@ Anthony Shaw氏
 ## Steering Council Panel
 
 * 動画: [Python Steering Council Panel - YouTube](https://www.youtube.com/watch?v=81ZpbKdlvh0)
-* スピーカー：Barry Warsaw、Emily Morehouse、Pablo Galindo Salgado、Thomas Wouters、Gregory P. Smith
+* スピーカー：Barry
+ Warsaw、Emily Morehouse、Pablo Galindo Salgado、Thomas Wouters、Gregory P. Smith
 
 Python Steering Councilは投票によって選ばれた5名による委員会で、Python言語とCPythonインタープリターの品質を安定性の維持や、PEP（Python拡張提案）の決定をPythonのコア開発者やPSFと連携して行っています。
 Steering Council Panelはこの5名の委員が現在や今後のPythonについて共有します。
@@ -369,6 +370,10 @@ Outstanding PyLady Awardの授賞式自体はPyCon US クロージング付近�
 今回の受賞およびPyCon US 2024への参加を通じて、様々な国のPyLadies事情を聴いたり、意見交換したりできたことも大変有意義でしたし、いままでオンライン上でしか会ったことのなかったPyLadiesのみなさんとも直接お話ができたことそのものが貴重な体験でした。
 
 今回は個人として受賞させていただいていますが、当然一人で成せたものではなく、毎月一緒にイベント運営したりイベントに参加してくれるPyLadies Tokyoのみなさん、一緒にPyLadies Caravanを盛り上げてくれてるみなさん、やりたいと思ったことをできるようサポートしてくださるPyCon JPのみなさんなどなど、たくさんの方のおかげでいただけた賞だと思っています。本当にありがとうございました。引き続きPythonコミュニティを盛り上げられたらいいなと思います。これからもよろしくお願いします。
+
+詳細についてはPyLadiesのブログも参照してください。
+
+* [Inaugural Winners of the Outstanding PyLady Award – PyLadies](https://pyladies.com/blog/Inaugural-Winners-of-the-Outstanding-PyLady-Award/outstanding-pylady-winners/)
 ````
 
 ## Closing
